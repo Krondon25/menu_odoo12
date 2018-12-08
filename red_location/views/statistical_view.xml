@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <!-- Operational Statistics Window Action --> 
+  <record id="crm_statistical_action" model="ir.actions.act_window">
+    <field name="name">Statistical</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="res_model">statistical</field>
+    <field name="view_type">form</field>
+    <field name="view_mode">tree,form</field>
+    <field name="help" type="html">
+      <p class="o_view_nocontent_smiling_face">
+        Create a statistical
+      </p>
+    </field>
+  </record>
+
+  <menuitem
+    id="crm_statistical_menu"
+    name="Statistical"
+    parent="crm_menu_statistical"
+    action="crm_statistical_action"
+    sequence="2"/>
+
+  <record id="crm_statistical_view_form" model="ir.ui.view">
+    <field name="name">crm.statistical.view.form</field>
+    <field name="model">statistical</field>
+    <field name="arch" type="xml">
+      <form>
+        <sheet>
+          <group>
+            <group>
+              <field name="location_id"/>
+              <field name="province_id"/>
+              <field name="censo_home_end"/>
+            </group>
+            <group>
+              <field name="censo_home_start"/>
+              <field name="dweller"/>
+              <field name="competence"/>
+              <field name="service_present_id"/>
+            </group>
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
+  
+  <record id="crm_statistical_view_tree" model="ir.ui.view">
+    <field name="name">crm.statistical.view.tree</field>
+    <field name="model">statistical</field>
+    <field name="arch" type="xml">
+      <tree>
+        <field name="location_id"/>
+        <field name="province_id"/>
+        <field name="censo_home_end"/>
+        <field name="censo_home_start"/>
+        <field name="dweller"/>
+        <field name="competence"/>
+        <field name="service_present_id"/>
+      </tree>
+    </field>
+  </record>
+</odoo>

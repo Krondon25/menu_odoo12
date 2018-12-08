@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <!-- Operational Statistics Window Action --> 
+  <record id="crm_location_action" model="ir.actions.act_window">
+    <field name="name">Location</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="res_model">location</field>
+    <field name="view_type">form</field>
+    <field name="view_mode">tree,form</field>
+    <field name="help" type="html">
+      <p class="o_view_nocontent_smiling_face">
+        Create a location
+      </p>
+    </field>
+  </record>
+
+  <menuitem
+        id="crm_menu_statistical"
+        name="Statistical"
+        parent="crm.crm_menu_root"
+        sequence="2"/>
+
+  <menuitem
+    id="crm_location_menu"
+    name="Location"
+    parent="crm_menu_statistical"
+    action="crm_location_action"
+    sequence="1"/>
+
+  <record id="crm_location_view_form" model="ir.ui.view">
+    <field name="name">crm.location.view.form</field>
+    <field name="model">location</field>
+    <field name="arch" type="xml">
+      <form>
+        <sheet>
+          <group>
+            <group>
+              <field name="name"/>
+              <field name="province"/>
+            </group>
+            <group>
+              <field name="ubication"/>
+            </group>
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
+  
+  <record id="crm_location_view_tree" model="ir.ui.view">
+    <field name="name">crm.location.view.tree</field>
+    <field name="model">location</field>
+    <field name="arch" type="xml">
+      <tree>
+        <field name="name"/>
+        <field name="province"/>
+        <field name="ubication"/>
+      </tree>
+    </field>
+  </record>
+</odoo>

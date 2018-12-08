@@ -1,0 +1,49 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* red_helpdesk_project
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-15 12:00+0000\n"
+"PO-Revision-Date: 2018-11-15 12:00+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: red_helpdesk_project
+#: model:ir.model,name:red_helpdesk_project.model_helpdesk_team
+msgid "Helpdesk Team"
+msgstr "Equipo de Servicio de Asistencia"
+
+#. module: red_helpdesk_project
+#: model:ir.model,name:red_helpdesk_project.model_helpdesk_ticket
+msgid "Helpdesk Ticket"
+msgstr "Tique de Servicio de Asistencia"
+
+#. module: red_helpdesk_project
+#: code:addons/red_helpdesk_project/models/helpdesk_ticket.py:14
+#: model:ir.model.fields,field_description:red_helpdesk_project.field_helpdesk_ticket__project_id
+#, python-format
+msgid "Project"
+msgstr "Projecto"
+
+#. module: red_helpdesk_project
+#: code:addons/red_helpdesk_project/models/helpdesk_ticket.py:19
+#: model:ir.model.fields,field_description:red_helpdesk_project.field_helpdesk_ticket__project_task_id
+#, python-format
+msgid "Project Task"
+msgstr "Tarea de Proyecto"
+
+#. module: red_helpdesk_project
+#: code:addons/red_helpdesk_project/models/helpdesk_team.py:12
+#: model:ir.model.fields,field_description:red_helpdesk_project.field_helpdesk_team__associate_project
+#: model:ir.model.fields,field_description:red_helpdesk_project.field_helpdesk_ticket__associate_project
+#, python-format
+msgid "associate project?"
+msgstr "Asociar Proyecto?"
+
